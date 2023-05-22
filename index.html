@@ -12,6 +12,8 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    
+
     <title>Weather App</title>
   </head>
   <body>
@@ -19,22 +21,23 @@
       <div class="weather-app">
         <div class="weather-app-wrapper">
           <div class="overview">
-            <h1>Phoenix</h1>
+            <h1 id="city"></h1>
             <ul>
               <li>Sunday 1:00</li>
-              <li>Sunny</li>
+
+              <li id="description">Sunny</li>
             </ul>
           </div>
           <div class="row">
             <div class="col-6">
-              <div class="clearfix weather-temperature">
+              <div class="d-flex weather-temperature">
                 <img
                   src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
                   alt="Sunny"
-                  class="float-left"
-                />
-                <div class="float-left">
-                  <strong>36</strong
+                  
+                 />
+                <div>
+                  <strong id-temperature>36</strong
                   ><span class="units"> °C | <a href="#"></a>°F</a></span>
                 </div>
               </div>
@@ -43,8 +46,8 @@
           <div class="col-6">
             <ul>
               <li>Precipitation: 0%</li>
-              <li>Humidity: 15%</li>
-              <li>Wind: 14 km/h</li>
+              <li>Humidity: <span id="Humidity"></span>%</li>
+              <li>Wind: <span id="Wind"></span>km/h</li>
             </ul>
           </div>
         </div>
